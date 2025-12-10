@@ -35,9 +35,11 @@ for(let i = 0; i <pets.length; i++){
 
     //pega as informações e coloca no card principal quando miniatura da imagem for clicada
     miniatura.addEventListener("click", () => {
-        //troca o nome h1 
+        //troca o nome h1 pelo nome do pet clicado
         nome.textContent = pet.querySelector("h2").textContent
+        //troca a descrição pela descrição do pet clicado
         descricao.textContent = pet.querySelector(".descricao").textContent
+        //troca a imagem pela imagem do pet clicado
         fotoGrande.src = miniatura.src
     })
 
